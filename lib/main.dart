@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'my_radio_button.dart';
+import 'my_radio_button2.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,7 +31,9 @@ class MyContainer extends StatelessWidget {
         backgroundColor: Colors.teal,
         centerTitle: true,
       ),
-      body: MyRadioButton(),
+      body: Column(
+        children: [MyRadioButton(), Divider(), MyRadioButton2()],
+      ),
     );
   }
 }
